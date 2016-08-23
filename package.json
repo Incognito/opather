@@ -2,9 +2,9 @@
   "name": "opather",
   "version": "0.0.0",
   "description": "A micro library to defer the resolution of object paths.",
-  "main": "index.js",
+  "main": "lib/opather.js",
   "scripts": {
-    "test": "npm test"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Incognito/opather/issues"
   },
-  "homepage": "https://github.com/Incognito/opather#readme"
+  "homepage": "https://github.com/Incognito/opather#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
 }
