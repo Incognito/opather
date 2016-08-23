@@ -1,0 +1,26 @@
+{
+  "name": "opather",
+  "version": "0.0.0",
+  "description": "A micro library to defer the resolution of object paths.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Incognito/opather.git"
+  },
+  "keywords": [
+    "object",
+    "path",
+    "opather",
+    "defer",
+    "configuration"
+  ],
+  "author": "Brian Graham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Incognito/opather/issues"
+  },
+  "homepage": "https://github.com/Incognito/opather#readme"
+}
