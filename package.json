@@ -1,6 +1,6 @@
 {
   "name": "opather",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A micro library to defer the resolution of object paths.",
   "main": "lib/opather.js",
   "scripts": {
