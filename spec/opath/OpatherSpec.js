@@ -14,12 +14,9 @@ describe("Opather", function() {
         expect(opatherInstance).toBeDefined(Opather);
       });
 
-      it("should have a locate method", function() {
-        var opatherInstance = Opather();
-
-        expect(opatherInstance.locate).toBeDefined();
-      });
       it("should be able to be called multiple times in chain", function() {
+        // I'm paranoid this could be broken by obscure changes to
+        // the call structure some day.
         expect(Opather()()()()()()()()()()()()).toBeDefined();
         expect(Opather().locate).toBeDefined();
         expect(Opather()().locate).toBeDefined();
@@ -44,13 +41,17 @@ describe("Opather", function() {
 
         expect(opatherInstance.locate(testData)).toEqual({'second': 'success' });
       });
-      fit("should be able to resolve two levels deep", function() {
-        var opatherInstance = Opather('first')('second');
+      it("should be able to resolve two levels deep", function() {
+        var opatherInstance = Opather('first')('second')('third');
         var testData = {
           'first': {
-            'second': 'success'
+            'second': {
+              'third': 'success'
+            },
+            'third': 'failure'
           },
-          'second': 'failure'
+          'second': 'failure',
+          'third': 'failure'
         };
 
         expect(opatherInstance.locate(testData)).toEqual('success');
