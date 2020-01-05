@@ -99,19 +99,3 @@ getUsername(hugeBlobOfData); // 'bob'
 
 And if you don't have data until later, you can return the opather and reduce
 data against it later.
-
-# Feedback providers, thinkers, hate mobs
-
- - What do you like?
- - What do you have questions about?
- - What do you think needs to change?
- - What new ideas can you present?
-
-Create an issue on github and let me know!
-
-# Future changes?
-
-I'd like to introduce some default-to-undefined/specified or methods similar to that.
-
-I really want to keep the API stable. If I need to break it, my goal will be to
-deprecate in a feature release and break in a major release.
